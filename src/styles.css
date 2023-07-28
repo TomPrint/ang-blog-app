@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* css variables */
+:root{
+    --primary-color: #026467;
+    --secondary-color: #E5F5EA;
+    --body-text-color: #596392;
+    --navbar-footer-color: #F9F9F9;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12 px;
+    color: var(--body-text-color);
+}
+
