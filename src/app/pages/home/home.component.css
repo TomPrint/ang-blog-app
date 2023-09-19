@@ -4,3 +4,10 @@
     padding-bottom:130px;
     background-color: var(--primary-color);
 }
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* Ensures all items have equal height */
+    gap: 15px; /* Adjust the gap between cards as needed */
+  }

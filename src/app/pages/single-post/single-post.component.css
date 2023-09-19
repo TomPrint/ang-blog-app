@@ -1,0 +1,14 @@
+
+/* Center the image vertically and horizontally */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px; /* Adjust as needed */
+}
+
+/* Make the image 50% smaller while maintaining aspect ratio */
+.card-img {
+    max-width: 50%;
+    height: auto;
+}

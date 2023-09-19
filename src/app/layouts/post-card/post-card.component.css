@@ -1,4 +1,26 @@
 .card{
     max-width: 400px;
+    min-height: 500px;
 
+}
+
+.card-img-container {
+    height: 300px; /* Adjust the desired fixed height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style the img element to maintain aspect ratio */
+  .card-img-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit:scale-down /* You can use "cover" for different scaling behavior */
+  }
+  
+  .excerpt-text {
+    max-width: 500px; /* Adjust this value to your desired maximum width */
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
 }

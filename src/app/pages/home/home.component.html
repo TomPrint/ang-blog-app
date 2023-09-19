@@ -1,55 +1,34 @@
 <section class="featured-section">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 text-center mt-5">
-                <h2 class="text-white">Featured Posts</h2>
-                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu porta massa. Cras cursus vitae est in interdum. Curabitur semper cursus ipsum, ac dictum lectus semper eu. </p>
-            </div>
+      <div class="row">
+        <div class="col-md-12 text-center mt-5">
+          <h2 class="text-white">Featured Posts</h2>
+          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu porta massa. Cras cursus vitae est in interdum. Curabitur semper cursus ipsum, ac dictum lectus semper eu. </p>
         </div>
-        <div class="row">
-            <div class="col-lg-3">
-                <app-post-card></app-post-card>
-            </div>
-            <div class="col-lg-3">
-                <app-post-card></app-post-card>
-            </div>
-            <div class="col-lg-3">
-                <app-post-card></app-post-card>
-            </div>
-            <div class="col-lg-3">
-                <app-post-card></app-post-card>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3" *ngFor="let featuredPost of featuredPostsArray">
+          <div class="card-container">
+            <app-post-card [postData]="featuredPost"></app-post-card>
+          </div>
         </div>
+      </div>
     </div>
-</section>
-
-<section class="container mt-5">
+  </section>
+  
+  <section class="container mt-5">
     <div class="col-md-12 text-center">
-        <h2>Latest Posts</h2>
-        <p>Mauris molestie ante ut suscipit gravida. Nam varius porta lectus, nec accumsan ipsum facilisis id. Morbi dignissim ultrices urna, vel ornare ante luctus. </p>
+      <h2>Latest Posts</h2>
+      <p>Mauris molestie ante ut suscipit gravida. Nam varius porta lectus, nec accumsan ipsum facilisis id. Morbi dignissim ultrices urna, vel ornare ante luctus. </p>
     </div>
-    
+  
     <div class="row">
-        <div class="col-md-4 mt-3">
-            <app-post-card></app-post-card>
+      <div class="col-md-4 mt-3" *ngFor="let latestPost of latestPostsArray">
+        <div class="card-container">
+          <app-post-card [postData]="latestPost"></app-post-card>
         </div>
-        <div class="col-md-4 mt-3">
-            <app-post-card></app-post-card>
-        </div>
-        <div class="col-md-4 mt-3">
-            <app-post-card></app-post-card>
-        </div>
-        <div class="col-md-4 mt-3">
-            <app-post-card></app-post-card>
-        </div>
-        <div class="col-md-4 mt-3">
-            <app-post-card></app-post-card>
-        </div>
-        <div class="col-md-4 mt-3">
-            <app-post-card></app-post-card>
-        </div>
+      </div>
+
     </div>
-
-</section>
-
-
+  </section>
+  
